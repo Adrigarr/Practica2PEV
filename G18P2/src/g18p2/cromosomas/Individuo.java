@@ -5,6 +5,11 @@
  */
 package g18p2.cromosomas;
 
+
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  *
  * @author usuario_local
@@ -35,6 +40,12 @@ public class Individuo {
     
     
     public void cromosomaAleatorio(){
-
+        ArrayList<Integer> alfabeto = new ArrayList<Integer>();
+        
+        for(int i=0; i<26; i++){
+            alfabeto.set(i, i);
+        }
+        
+        Collections.shuffle(alfabeto);
     }
 }
